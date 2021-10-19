@@ -1,4 +1,5 @@
 import moment from "moment";
+import { memo } from "react";
 import "./style.css";
 
 const refresh = () => {
@@ -64,4 +65,4 @@ function Weather({ weatherData }) {
   );
 }
 
-export default Weather;
+export default memo(Weather);
