@@ -60,6 +60,10 @@ function Weather({ weatherData }) {
             {moment().format("LL")}
           </div>
         </div>
+
+        <div
+          style={{color: '#000', fontSize: 10, }}
+        >By: Cobbold</div>
       </div>
     </div>
   );
