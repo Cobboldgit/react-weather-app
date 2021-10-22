@@ -8,6 +8,7 @@
 
 body {
   font-family: "Recursive", sans-serif;
+  overflow: hidden;
 }
 
 .weather-container {
@@ -16,7 +17,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
 }
 
 .weather--box {
@@ -111,7 +111,7 @@ body {
   margin: 0px 20px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px){
   .weather--box {
     min-width: 300px;
     overflow: scroll;
@@ -180,4 +180,39 @@ body {
   .date div {
     margin: 0px 10px;
   }
+}
+
+@media screen and (max-height: 750px) {
+    .weather--box {
+        height: 80%;
+      }
+
+      .reload--container {
+        height: 35px;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 1rem;
+      }
+    
+      .reload--container button {
+        font-size: 15px;
+      }
+    
+      .sun {
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+      }
+      
+      .sun .sun-span {
+        margin: 0px 10px;
+      }
+      
+      .des {
+        margin-bottom: 3rem;
+      }
+      
+      
+      .date {
+        margin-top: 2rem;
+      }
 }
